@@ -22,9 +22,11 @@ export default function RootLayout({ children }) {
         className={`${jetBrainsMono.variable} font-primary text-white`}
         style={{ backgroundColor: "var(--color-primary)" }}
       >
-        <Header />
-        <StairTransition />
-        <PageTransition>{children}</PageTransition>
+        <div className="px-20 sm:px-26 md:px-40 lg:px-52 xl:px-64">
+          <Header />
+          <StairTransition />
+          <PageTransition>{children}</PageTransition>
+        </div>
       </body>
     </html>
   );
