@@ -15,7 +15,7 @@ export default function Page() {
               Hello I'm <br /> <span className="text-accent">Fares Abbes</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              i excel at creating web applications with a great user experience
+              I excel at creating web applications with a great user experience
               and i can do that with various technologies
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
