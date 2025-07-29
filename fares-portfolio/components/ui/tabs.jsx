@@ -38,7 +38,7 @@ function TabsTrigger({ className, ...props }) {
       )}
       {...props}
     />
-  );
+  ); 
 }
 
 function TabsContent({ className, ...props }) {
