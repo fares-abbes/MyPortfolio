@@ -33,7 +33,7 @@ import { useEffect } from "react";
 const about = {
   title: "About Me",
   description:
-    "I’m Fares Abbes, a software engineer with strong expertise in building full-stack web applications and AI-integrated platforms. I have hands-on experience developing microservices, secure APIs, and modern frontend interfaces. My current focus is on intelligent task automation and AI-driven project planning tools designed to enhance team productivity. I'm passionate about solving real-world problems and delivering high-quality, scalable solutions.",
+    "I’m Fares Abbes, a final year software engineer with strong expertise in building full-stack web applications and AI-integrated platforms. I have hands-on experience developing microservices, secure APIs, and modern frontend interfaces. My current focus is on intelligent task automation and AI-driven project planning tools designed to enhance team productivity.",
   info: [
     { fieldName: "Name", fieldValue: "Fares Abbes" },
     { fieldName: "Phone", fieldValue: "(+216) 58 405 469" },
@@ -41,10 +41,7 @@ const about = {
     { fieldName: "Location", fieldValue: "Tunis, Tunisia" },
     { fieldName: "Freelance", fieldValue: "Available" },
     { fieldName: "Languages", fieldValue: "Arabic, French, English" },
-    {
-      fieldName: "Experience",
-      fieldValue: "2+ years (internships + real projects)",
-    },
+   
   ],
 };
 
@@ -199,7 +196,7 @@ const Resume = () => {
           defaultValue="experience"
           className="flex flex-col xl:flex-row gap-[30px] overflow-hidden"
         >
-          <TabsList className="flex flex-col w-full max-w-[320px] mx-auto xl:mx-0 gap-4">
+          <TabsList className="flex flex-col w-full max-w-[320px] mx-auto xl:mx-0 gap-4 overflow-hidden">
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
@@ -312,17 +309,27 @@ const Resume = () => {
                 </ul>
               </div>
             </TabsContent>
-            <TabsContent value="about" className="w-full text-center xl:text-left ">
+            <TabsContent
+              value="about"
+              className="w-full text-center xl:text-left "
+            >
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
-                  {about.info.map((item, index) => {
-                    return <li key={index} className="flex items-center xl:justify-start gap-4">
-                      <span className="text-white/60">{item.fieldName}:</span> 
-                      <span className="text-xl">{item.fieldValue}</span>
+                <p className="max-w-[500px] text-sm text-white/60 mx-auto xl:mx-0">
+                  {about.description}
+                </p>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-6 max-w-[800px] mx-auto xl:mx-0">
+                  {about.info.map((item, index) => (
+                    <li
+                      key={index}
+                      className="flex items-center justify-between gap-2 py-1 border-b border-white/10 text-xs"
+                    >
+                      <span className="text-white/60">{item.fieldName}:</span>
+                      <span className="text-white/90 text-right break-all">
+                        {item.fieldValue}
+                      </span>
                     </li>
-                  })}
+                  ))}
                 </ul>
               </div>
             </TabsContent>
