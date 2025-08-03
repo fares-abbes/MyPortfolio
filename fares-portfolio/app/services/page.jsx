@@ -6,33 +6,35 @@ import { motion } from "framer-motion";
 const services = [
   {
     num: "01",
-    title: "Web Development",
+    title: "Full-Stack Web Development",
     description:
-      "I create responsive and user-friendly websites using the latest technologies.",
-    href: "",
+      "I build modern, scalable web apps with React, Angular, Spring Boot, and Symfony – tailored to your business needs.",
+    href: "#",
   },
   {
-    num: "01",
-    title: "Web Development",
+    num: "02",
+    title: "Microservices Architecture",
     description:
-      "I create responsive and user-friendly websites using the latest technologies.",
-    href: "",
+      "I design and develop efficient backend systems using Spring Boot, REST APIs, and Eureka for scalable service orchestration.",
+    href: "#",
+  },
+    
+ {
+    num: "03",
+    title: "Backend API Development",
+    description:
+      "I create secure, high-performance RESTful APIs with Spring Boot and Flask to support your frontend or mobile applications.",
+    href: "#",
   },
   {
-    num: "01",
-    title: "Web Development",
+    num: "04",
+    title: "AI & Intelligent Systems",
     description:
-      "I create responsive and user-friendly websites using the latest technologies.",
-    href: "",
-  },
-  {
-    num: "01",
-    title: "Web Development",
-    description:
-      "I create responsive and user-friendly websites using the latest technologies.",
-    href: "",
+      "I integrate AI-powered tools like chatbots and prediction models using Python, Flask, and PyTorch to boost engagement and decision-making.",
+    href: "#",
   },
 ];
+
 
 const Services = () => {
   return (
