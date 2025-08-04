@@ -37,28 +37,55 @@ const Contact = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.6 }}
-      className="py-12 px-4 container mx-auto"
+      animate={{
+        opacity: 1,
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+      }}
+      className="py-6"
     >
-      <h2 className="text-3xl font-bold text-white mb-6">Contact Me</h2>
-      <div className="grid md:grid-cols-2 gap-8">
-        <form className="flex flex-col gap-4">
-          <Input type="text" placeholder="Your Name" />
-          <Input type="email" placeholder="Your Email" />
-          <Textarea placeholder="Your Message" />
-          <Button type="submit">Send Message</Button>
-        </form>
-        <div className="space-y-6">
-          {info.map((item, index) => (
-            <div key={index} className="flex items-start gap-4 text-white">
-              <div className="text-accent text-xl">{item.icon}</div>
-              <div>
-                <h4 className="font-bold">{item.title}</h4>
-                <p className="text-white/70">{item.description}</p>
+      <div className="container mx-auto">
+        <div className="flex flex-col xl:flex-row gap-[30px] ">
+          <div className="xl:h-[54%] order-2 xl:order-none">
+            <form
+              action=""
+              className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
+            >
+              <h3 className="text-4xl text-accent">Let's work together</h3>
+              <p className="text-wihte/60">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                praesentium quasi doloremque aliquam, sint exercitationem fugiat
+                atque vitae odio ex nobis id debitis, ratione modi fuga nulla.
+                Vitae, rem harum.
+              </p>
+              <div className="">
+                <Input type="firstname" placeholder="firstname" />
+                <Input type="lastname" placeholder="lastname" />
+                <Input type="email" placeholder="email" />
+                <Input type="Phone" placeholder="Phone" />
               </div>
-            </div>
-          ))}
+              <Select>
+                <SelectTrigger className="w-full">
+                  <SelectValue placeholder="Select a service"></SelectValue>
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectGroup>
+                    <SelectLabel>Select a Services</SelectLabel>
+                    <SelectItem value="est">
+                      Web Development
+                    </SelectItem>
+                    <SelectItem value="cst">
+                      api 
+                    </SelectItem>
+                    <SelectItem value="web-development">
+                      Web Development
+                    </SelectItem>
+                  </SelectGroup>
+                </SelectContent>
+              </Select>
+              <Textarea className="h-[200px]" placeholder="Type your message" />
+            </form>
+          </div>
+          <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0"></div>
         </div>
       </div>
     </motion.section>
