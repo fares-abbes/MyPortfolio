@@ -18,8 +18,8 @@ const services = [
       "I design and develop efficient backend systems using Spring Boot, REST APIs, and Eureka for scalable service orchestration.",
     href: "#",
   },
-    
- {
+
+  {
     num: "03",
     title: "Backend API Development",
     description:
@@ -33,8 +33,14 @@ const services = [
       "I integrate AI-powered tools like chatbots and prediction models using Python, Flask, and PyTorch to boost engagement and decision-making.",
     href: "#",
   },
+  {
+    num: "05",
+    title: "Web Scraping (Beautiful Soup & Selenium)",
+    description:
+      "Extracting data from websites using Python's Beautiful Soup and Selenium for automation.",
+    href: "#",
+  },
 ];
-
 
 const Services = () => {
   return (
@@ -54,12 +60,19 @@ const Services = () => {
                   className="flex-1 flex flex-col justify-center gap-6 group"
                 >
                   <div className="w-full flex justify-between items-center">
-                    <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">{service.num}</div>
-                    <Link href={service.href} className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent trasnition-all duration-500 flex justify-center items-center hover:rotate-45">
-                      <BsArrowDownRight className="text-primary text-3xl"/>
+                    <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
+                      {service.num}
+                    </div>
+                    <Link
+                      href={service.href}
+                      className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent trasnition-all duration-500 flex justify-center items-center hover:rotate-45"
+                    >
+                      <BsArrowDownRight className="text-primary text-3xl" />
                     </Link>
                   </div>
-                  <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">{service.title}</h2>
+                  <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
+                    {service.title}
+                  </h2>
                   <p className="text-white/60">{service.description}</p>
                   <div className="border-b border-white/20 w-full"></div>
                 </div>

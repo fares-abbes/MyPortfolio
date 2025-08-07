@@ -11,6 +11,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import Link from "next/link";
+import WorkSliderBtns from "@/components/WorkSliderBtns";
 import Image from "next/image";
 
 const projects = [
@@ -122,23 +123,25 @@ const Work = () => {
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
-              className="xl:h-[520px] mb-12"
+              className="mb-12"
               onSlideChange={handleSlideChange}
             >
               {projects.map((project, index) => (
                 <SwiperSlide key={index} className="w-full">
-                  <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
-                    <div className=" "></div>
-                    <div className="">
-                      <Image
-                        src={project.image}
-                        fill
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
+                  <div className="h-[460px] relative group flex justify-center items-center">
+                    <Image
+                      src={project.image}
+                      width={380}
+                      height={250}
+                      className="max-w-[380px] h-auto object-cover"
+                      alt={project.title}
+                    />
                   </div>
                 </SwiperSlide>
               ))}
+              <div className="flex justify-end  pr-15">
+                <WorkSliderBtns className="" />
+              </div>
             </Swiper>
           </div>
         </div>
