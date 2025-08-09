@@ -45,7 +45,7 @@ const Photo = () => {
           style={{ width: "340px", height: "340px", padding: "12px" }}
         >
           <Image
-            src="/assets/fares.png"
+            src="/images/fares.jpg"
             priority
             quality={100}
             width={316}
