@@ -13,14 +13,14 @@ const services = [
   },
   {
     num: "02",
-    title: "Microservices Architecture",
+    title: "Web Scraping (Beautiful Soup & Selenium)",
     description:
-      "I design and develop efficient backend systems using Spring Boot, REST APIs, and Eureka for scalable service orchestration.",
+      "Extracting data from websites using Python's Beautiful Soup and Selenium for automation.",
     href: "#",
   },
 
   {
-    num: "03",
+    num: "04",
     title: "Backend API Development",
     description:
       "I create secure, high-performance RESTful APIs with Spring Boot and Flask to support your frontend or mobile applications.",
@@ -35,9 +35,9 @@ const services = [
   },
   {
     num: "05",
-    title: "Web Scraping (Beautiful Soup & Selenium)",
+    title: "Microservices Architecture",
     description:
-      "Extracting data from websites using Python's Beautiful Soup and Selenium for automation.",
+      "I design and develop efficient backend systems using Spring Boot, REST APIs, and Eureka for scalable service orchestration.",
     href: "#",
   },
 ];
