@@ -18,9 +18,9 @@ const projects = [
   {
     num: "01",
     category: "full stack",
-    title: "microservices restaurant app",
+    title: "Microservices Restaurant App",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "A modern restaurant management application developed with a microservices architecture. It streamlines menu management, order processing, and payments, ensuring scalability and reliability for restaurant operations.",
     image: "/images/work1.jpg",
     stack: [
       { name: "Spring boot" },
@@ -33,9 +33,9 @@ const projects = [
   {
     num: "02",
     category: "full stack",
-    title: "Task management app for a Software Company",
+    title: "Task Management Software for Agile Teams",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "A collaborative platform designed for agile software teams to manage tasks, sprints, and progress. It supports real-time updates, team assignments, and analytics to boost productivity and transparency.",
     image: "/images/work2.jpg",
     stack: [
       { name: "Angular" },
@@ -48,9 +48,9 @@ const projects = [
   {
     num: "03",
     category: "",
-    title: "AI-Powered Web Platform for Football Academies",
+    title: "AI-Powered Platform for Football Academies",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "An intelligent web platform for football academies to manage teams, schedule matches, and create tactical plans. Features include player management, interactive tactic boards, and AI-driven insights.",
     image: "/images/work3.jpg",
     stack: [{ name: "Angular" }, { name: "MySQL" }, { name: "springboot" }],
     live: "",

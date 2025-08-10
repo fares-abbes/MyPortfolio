@@ -20,7 +20,7 @@ const services = [
   },
 
   {
-    num: "04",
+    num: "03",
     title: "Backend API Development",
     description:
       "I create secure, high-performance RESTful APIs with Spring Boot and Flask to support your frontend or mobile applications.",
